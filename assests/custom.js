@@ -3,10 +3,10 @@
 	button.onclick = function() {
 		let addbox = document.createElement("DIV");
 		addbox.className = 'item';
-		document.getElementById('parent').appendChild(addbox);
+		document.getElementById("parent").appendChild(addbox);
 	}
 
-	document.addEventListener('click', function(e) {
+	document.addEventListener('click', function(e){
 		element = document.getElementsByClassName("item");
 		let color = ["blue", "green", "red"];
 		for(let i = 0; i < element.length; i++) {
@@ -18,5 +18,9 @@
 				this.style.background = color[clickCcount];
 			}
 		}
-	});
+	}, true);
+
+
+
+
 })();
