@@ -14,13 +14,9 @@
 			divElm.onclick = function(eleClick) {
 				let divTarget 	 = eleClick.target;
 				divTarget.clicks = (divTarget.clicks || 0) + 1;
-				let clickCcount  = divTarget.clicks % 3;
-				this.style.background = color[clickCcount];
+				let clickcount  = divTarget.clicks % 3;
+				this.style.background = color[clickcount];
 			}
 		}
 	}, true);
-
-
-
-
 })();
